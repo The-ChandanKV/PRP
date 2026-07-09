@@ -11,6 +11,13 @@ app.get("/health", (_req, res) => {
   res.json({ ok: true });
 });
 
+// Google OAuth callback route
+app.get("/auth/google/callback", (req, res) => {
+  const { token } = req.query;
+  // Here, handle the token, e.g., create JWT session
+  res.json({ message: "OAuth callback received!", token });
+});
+
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
