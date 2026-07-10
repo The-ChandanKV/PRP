@@ -18,6 +18,12 @@ app.get("/auth/google/callback", (req, res) => {
   res.json({ message: "OAuth callback received!", token });
 });
 
+// Additional route to handle user information after OAuth
+app.get("/auth/google/user", (req, res) => {
+  // Here, you would typically fetch user information from your database or service
+  res.json({ user: "User information would be retrieved here" });
+});
+
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });

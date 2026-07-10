@@ -8,5 +8,15 @@ function logout() {
     // Here you would typically clear the token from local storage or state
 }
 
+// Function to initiate Google login
+function initiateGoogleLogin() {
+    // Logic to handle Google OAuth login
+    console.log("Initiating Google OAuth login");
+    // Here, trigger the Google OAuth API, handle the response, etc.
+}
+
 // Event listener for logout button (to be added in HTML)
 document.getElementById('logout-btn').addEventListener('click', logout);
+
+// Event listener for login button (to be added in HTML)
+document.getElementById('login-btn').addEventListener('click', initiateGoogleLogin);
