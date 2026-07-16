@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const healthRouter = require('./src/routes/health');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -7,9 +8,8 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json());
 app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/health", (_req, res) => {
-  res.json({ ok: true });
-});
+// Use the health router for /api/v1/health endpoint
+app.use("/api/v1/health", healthRouter);
 
 // Google OAuth callback route
 app.get("/auth/google/callback", (req, res) => {
