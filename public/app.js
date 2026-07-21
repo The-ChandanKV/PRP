@@ -15,6 +15,27 @@ function initiateGoogleLogin() {
     // Here, trigger the Google OAuth API, handle the response, etc.
 }
 
+// Function to toggle dark mode
+function toggleDarkMode() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+    localStorage.setItem('dark-mode', body.classList.contains('dark-mode'));
+}
+
+// Load dark mode preference on startup
+window.onload = () => {
+    const darkModePreference = localStorage.getItem('dark-mode') === 'true';
+    if (darkModePreference) {
+        document.body.classList.add('dark-mode');
+    }
+};
+
+// Event listener for toggle button (to be added in HTML)
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+if (darkModeToggle) {
+    darkModeToggle.addEventListener('click', toggleDarkMode);
+}
+
 // Event listener for logout button (to be added in HTML)
 document.getElementById('logout-btn').addEventListener('click', logout);
 
