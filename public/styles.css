@@ -28,3 +28,39 @@ button {
   cursor: pointer; /* Changed for better UI */
   opacity: 1; /* Changed for better UI */
 }
+
+/* Styles for the Settings page */
+.settings-container {
+  max-width: 600px;
+  margin: 5rem auto;
+  padding: 2rem;
+  background: #1e293b;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+oh-settings-header {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #e2e8f0;
+}
+
+.toggle-button {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.toggle-button label {
+  margin-right: 0.5rem;
+  color: #e2e8f0;
+}
+
+.save-button {
+  background: #4CAF50; /* Green */
+}
+
+.save-button:disabled {
+  background: #a5d6a7; /* Light Green */
+  cursor: not-allowed;
+}

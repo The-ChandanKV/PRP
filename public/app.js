@@ -15,6 +15,15 @@ function initiateGoogleLogin() {
     // Here, trigger the Google OAuth API, handle the response, etc.
 }
 
+// Function to handle dark mode toggle
+function handleDarkModeToggle() {
+    const body = document.body;
+    body.classList.toggle('dark-mode');
+}
+
+// Event listener for dark mode toggle button (to be added in HTML)
+document.getElementById('dark-mode-toggle').addEventListener('click', handleDarkModeToggle);
+
 // Event listener for logout button (to be added in HTML)
 document.getElementById('logout-btn').addEventListener('click', logout);
 
