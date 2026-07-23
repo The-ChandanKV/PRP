@@ -69,3 +69,15 @@ body {
 .button:focus-visible {
   outline: 2px solid rgba(255, 255, 255, 0.5);
 }
+
+/* New styles for alignment with landing page */
+
+body {
+  background: rgba(30, 41, 59, 0.9); /* Slight transparency for glassmorphism effect */
+}
+
+#logout-container {
+  backdrop-filter: blur(10px); /* Adding blur effect */
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border for glass effect */
+}
