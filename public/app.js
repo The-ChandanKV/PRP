@@ -78,3 +78,19 @@ document.addEventListener('keydown', (event) => {
         loginModal.style.display = 'none';
     }
 });
+
+// Scroll-triggered animations
+const revealElements = document.querySelectorAll('.reveal');
+const revealOnScroll = () => {
+    revealElements.forEach(element => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        if (elementTop < windowHeight * 0.8) {
+            element.classList.add('active');
+        }
+    });
+};
+// Initial call to reveal elements on the first load
+revealOnScroll();
+// Event listener for scroll events
+window.addEventListener('scroll', revealOnScroll);
