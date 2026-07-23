@@ -78,3 +78,20 @@ document.addEventListener('keydown', (event) => {
         loginModal.style.display = 'none';
     }
 });
+
+// Scroll-triggered animations
+const features = document.querySelectorAll('.feature-card');
+const options = { threshold: 0.1 };
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+        }
+    });
+}, options);
+
+features.forEach(feature => {
+    observer.observe(feature);
+});
