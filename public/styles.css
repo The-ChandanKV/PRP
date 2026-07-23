@@ -27,6 +27,24 @@ button {
   font-size: 1rem;
   cursor: pointer; /* Changed for better UI */
   opacity: 1; /* Changed for better UI */
+  transition: transform 0.3s, box-shadow 0.3s; /* Added transition for hover effects */
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Added subtle shadow on hover */
+}
+
+/* Hero Section Styles */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.7)), url('path/to/your/background.jpg'); /* Example for dynamic background */
+  background-size: cover;
+  background-position: center;
 }
 
 /* Login Modal Styles */
