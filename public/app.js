@@ -16,6 +16,49 @@ function initiateGoogleLogin() {
     // Here, trigger the Google OAuth API, handle the response, etc.
 }
 
+// Function to create the immersive landing page
+function createLandingPage() {
+    const mainContainer = document.createElement('main');
+    mainContainer.classList.add('landing-container');
+    mainContainer.innerHTML = `
+        <section class="hero">
+            <h1 class="hero-title">Welcome to PRP</h1>
+            <p class="hero-subtitle">Your gateway to seamless experiences.</p>
+            <button class="cta-btn primary-btn">Get Started</button>
+            <button class="cta-btn secondary-btn">Learn More</button>
+        </section>
+        <section class="features-grid">
+            <div class="feature-card">Feature 1</div>
+            <div class="feature-card">Feature 2</div>
+            <div class="feature-card">Feature 3</div>
+            <div class="feature-card">Feature 4</div>
+        </section>
+    `;
+    document.body.appendChild(mainContainer);
+
+    // Adding animations
+    const heroSection = document.querySelector('.hero');
+    const featureCards = document.querySelectorAll('.feature-card');
+    heroSection.classList.add('animate-hero');
+
+    featureCards.forEach((card, index) => {
+        card.style.transition = 'transform 0.3s, box-shadow 0.3s';
+        card.addEventListener('mouseover', () => {
+            card.style.transform = 'scale(1.05)';
+            card.style.boxShadow = '0 8px 20px rgba(255, 255, 255, 0.2)';
+        });
+        card.addEventListener('mouseout', () => {
+            card.style.transform = 'scale(1)';
+            card.style.boxShadow = 'none';
+        });
+    });
+}
+
+// Event listener for landing page creation
+document.addEventListener('DOMContentLoaded', () => {
+    createLandingPage();
+});
+
 // Event listener for logout button (to be added in HTML)
 document.getElementById('logout-btn').addEventListener('click', logout);
 
