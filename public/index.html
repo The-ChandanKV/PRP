@@ -5,14 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PRP</title>
     <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/css/landing.css" />
   </head>
   <body>
-    <main class="container">
-      <h1>PRP Web App</h1>
-      <p>Starter project — authentication will be added here.</p>
-      <button id="login-btn" type="button">Login with Google</button>
-      <button id="logout-btn" type="button">Logout</button>
-    </main>
+    <header class="navbar">
+      <nav>
+        <h1>PRP Immersive Landing Page</h1>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Welcome to PRP</h1>
+        <p>Discover our premium features.</p>
+        <button id="login-btn" type="button" class="button">Login with Google</button>
+        <button id="logout-btn" type="button" class="button">Logout</button>
+      </div>
+    </section>
+    <section class="features">
+      <div class="feature-card">
+        <h2>Feature 1</h2>
+        <p>Description of feature 1.</p>
+      </div>
+      <div class="feature-card">
+        <h2>Feature 2</h2>
+        <p>Description of feature 2.</p>
+      </div>
+      <div class="feature-card">
+        <h2>Feature 3</h2>
+        <p>Description of feature 3.</p>
+      </div>
+      <div class="feature-card">
+        <h2>Feature 4</h2>
+        <p>Description of feature 4.</p>
+      </div>
+    </section>
     <div id="login-modal" class="modal">
       <div class="modal-content">
         <span class="close-button">×</span>
@@ -28,5 +54,6 @@
       </div>
     </div>
     <script src="/app.js"></script>
+    <script src="/js/landing.js"></script>
   </body>
 </html>
