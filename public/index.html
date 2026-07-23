@@ -5,14 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PRP</title>
     <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/css/landing.css" />
   </head>
   <body>
-    <main class="container">
-      <h1>PRP Web App</h1>
-      <p>Starter project — authentication will be added here.</p>
-      <button id="login-btn" type="button">Login with Google</button>
-      <button id="logout-btn" type="button">Logout</button>
-    </main>
+    <header class="floating-nav">
+      <h1>PRP Immersive Landing</h1>
+      <nav>
+        <button id="login-btn" type="button">Login with Google</button>
+        <button id="logout-btn" type="button">Logout</button>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="hero-background"></div>
+      <h2>Welcome to PRP</h2>
+      <p>Your journey begins here.</p>
+      <div class="cta-buttons">
+        <button class="cta-primary">Get Started</button>
+        <button class="cta-secondary">Learn More</button>
+      </div>
+    </section>
+    <section class="features">
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>Feature One</h3>
+          <p>Description of feature one.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Feature Two</h3>
+          <p>Description of feature two.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Feature Three</h3>
+          <p>Description of feature three.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Feature Four</h3>
+          <p>Description of feature four.</p>
+        </div>
+      </div>
+    </section>
     <div id="login-modal" class="modal">
       <div class="modal-content">
         <span class="close-button">×</span>
@@ -28,5 +59,6 @@
       </div>
     </div>
     <script src="/app.js"></script>
+    <script src="/js/landing.js"></script>
   </body>
 </html>
