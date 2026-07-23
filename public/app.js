@@ -6,6 +6,7 @@ function logout() {
     // Clear JWT and perform logout actions here
     console.log("User logged out");
     // Here you would typically clear the token from local storage or state
+    window.location.href = 'logout.html';
 }
 
 // Function to initiate Google login
