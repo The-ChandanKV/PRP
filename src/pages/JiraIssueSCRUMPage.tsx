@@ -1,9 +1,7 @@
 import React from "react";
 import { PageHeader } from "../components/JiraIssueSCRUM/PageHeader";
 
-/** Generated scaffold for: Implement Jira issue SCRUM-23 for The-ChandanKV/PRP. Summary: [UI] Implement Immersive and Interactive Landing Page
-
-Tic
+/** Generated scaffold for: Implement Jira issue SCRUM-25 for The-ChandanKV/PRP. Summary: [UI] Build Immersive Landing Page for PRP — Hero, Features
  * Template: landing_page
  * Planned components: 5
  */
