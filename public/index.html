@@ -1,32 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PRP</title>
-    <link rel="stylesheet" href="/styles.css" />
-  </head>
-  <body>
-    <main class="container">
-      <h1>PRP Web App</h1>
-      <p>Starter project — authentication will be added here.</p>
-      <button id="login-btn" type="button">Login with Google</button>
-      <button id="logout-btn" type="button">Logout</button>
-    </main>
-    <div id="login-modal" class="modal">
-      <div class="modal-content">
-        <span class="close-button">×</span>
-        <h2>Login</h2>
-        <form id="login-form">
-          <label for="email">Email:</label>
-          <input type="email" id="email" required />
-          <label for="password">Password:</label>
-          <input type="password" id="password" required />
-          <button type="submit" id="sign-in-button">Sign In</button>
-          <div id="error-banner" role="status" aria-live="polite" style="display: none; color: red;"></div>
-        </form>
-      </div>
-    </div>
-    <script src="/app.js"></script>
-  </body>
-</html>
+import React from "react"; import { PageHeader } from
+"../src/components/Feature/PageHeader"; /** Generated scaffold for: Implement
+Jira issue SCRUM-25 for The-ChandanKV/PRP. Summary: [UI] Build Immersive Landing
+Page for PRP — Hero, Features * Template: landing_page * Planned components: 5
+*/ export default function FeaturePage() { return (
+<div className="min-h-screen bg-background text-foreground">
+  <header className="border-b border-border px-6 py-4">
+    <h1 className="text-2xl font-semibold tracking-tight">Feature</h1>
+    <p className="mt-1 text-sm text-muted-foreground">
+      full-bleed-hero-then-sections
+    </p>
+  </header>
+  <main className="mx-auto max-w-5xl space-y-6 px-6 py-8">
+    <section
+      className="rounded-lg border border-border bg-card p-6 text-card-foreground"
+    >
+      <p className="text-sm text-muted-foreground">
+        Loading, empty, and error states should be handled by data hooks.
+      </p>
+    </section>
+    <PageHeader title="PageHeader" />
+  </main>
+</div>
+); }
