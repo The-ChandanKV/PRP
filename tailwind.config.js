@@ -22,7 +22,19 @@ export default {
         sans: ['Inter', 'system-ui', 'sans-serif'],
         mono: ['JetBrains Mono', 'monospace'],
       },
+      // Adding dark mode support
+      backgroundColor: theme => ({
+        ...theme('colors'),
+        'primary': '#1e1b4b',
+        'secondary': '#4f83e1',
+      }),
+      textColor: theme => ({
+        ...theme('colors'),
+        'primary': '#ffffff',
+        'secondary': '#cbd5e1',
+      }),
     },
   },
+  darkMode: 'class',
   plugins: [],
 }
