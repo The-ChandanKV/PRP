@@ -65,3 +65,27 @@ button {
 .success {
   color: #4caf50;
 }
+
+/* Dark mode and glassmorphism styles */
+body {
+  background-color: #1e293b;
+  color: #ffffff;
+}
+
+.bg-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+}
+
+.text-muted-foreground {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.border-border {
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.bg-background {
+  background-color: #0f172a;
+}
