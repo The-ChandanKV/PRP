@@ -20,5 +20,116 @@ Dynamic Landing Page for PRPil * Template: landing_page * Planned components: 5
     </section>
     <PageHeader title="PageHeader" />
   </main>
+  <nav className="sticky top-0 bg-slate-950/80 backdrop-blur-2xl border-b border-slate-800/80 px-6 py-4">
+    <div className="flex justify-between items-center">
+      <div className="flex items-center">
+        <img src="/logo.png" alt="PRPilot Logo" className="h-8" />
+        <span className="ml-2 bg-indigo-500 text-white rounded-full px-2">v2.4</span>
+      </div>
+      <div className="flex space-x-4">
+        <a href="#features" className="text-white">Features</a>
+        <a href="#pricing" className="text-white">Pricing</a>
+        <a href="#faq" className="text-white">FAQ</a>
+      </div>
+      <div className="flex items-center space-x-4">
+        <a href="#sign-in" className="text-white">Sign In</a>
+        <button className="glowing-button text-white">Get Started Free</button>
+      </div>
+    </div>
+  </nav>
+  <section style="background:#030712;" className="flex justify-between p-8">
+    <div className="flex flex-col justify-center">
+      <span className="badge">✨ Powered by Gemini 3.1 & Advanced AI</span>
+      <h1 className="text-5xl font-bold text-gradient">Automate Code Reviews with AI Precision</h1>
+      <p className="mt-4 text-xl">Optimize your development workflow using cutting-edge AI tools.</p>
+      <div className="flex space-x-4 mt-6">
+        <button className="glowing-button">Try It Now</button>
+        <button className="text-white">Learn More</button>
+      </div>
+    </div>
+    <div className="bg-slate-900/80 backdrop-blur-2xl border border-slate-800 rounded-2xl shadow-2xl p-4">
+      <div className="macOS-dots">
+        <div className="dot red"></div>
+        <div className="dot yellow"></div>
+        <div className="dot green"></div>
+      </div>
+      <h2 className="font-mono">pull_request_review.py</h2>
+      <div className="code-diff">
+        <span className="addition">+ New feature added</span>
+        <span className="deletion">- Deprecated method removed</span>
+      </div>
+      <span className="ai-review-badge">✓ 0 Security Vulnerabilities Found</span>
+    </div>
+  </section>
+  <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-8 bg-slate-900/50 backdrop-blur-xl border border-indigo-500/20 rounded-2xl">
+    <div className="feature-card">
+      <h3>Automated PR Reviews</h3>
+      <p>Automate your pull requests with AI.</p>
+    </div>
+    <div className="feature-card">
+      <h3>Context-Aware Analysis</h3>
+      <p>Get insights with every PR.</p>
+    </div>
+    <div className="feature-card">
+      <h3>Security Scanning</h3>
+      <p>Scan your code for vulnerabilities.</p>
+    </div>
+    <div className="feature-card">
+      <h3>Auto Merge Rules</h3>
+      <p>Automatically merge PRs upon meeting conditions.</p>
+    </div>
+    <div className="feature-card">
+      <h3>Slack Notifications</h3>
+      <p>Receive updates in your Slack channel.</p>
+    </div>
+    <div className="feature-card">
+      <h3>CI/CD Integration</h3>
+      <p>Seamlessly integrate into your pipeline.</p>
+    </div>
+  </section>
+  <section className="stats-pricing bg-slate-950 p-8">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="stat-card">99.8% Accuracy</div>
+      <div className="stat-card">10x Faster Reviews</div>
+      <div className="stat-card">50,000+ PRs Merged</div>
+      <div className="stat-card">200+ Teams</div>
+    </div>
+    <div className="billing-toggle">
+      <span>Monthly</span>
+      <label className="switch">
+        <input type="checkbox" />
+        <span className="slider"></span>
+      </label>
+      <span>Annual <span className="badge">Save 20%</span></span>
+    </div>
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="pricing-card">Free</div>
+      <div className="pricing-card" style="border: 2px solid indigo;">Pro</div>
+      <div className="pricing-card">Enterprise</div>
+    </div>
+  </section>
+  <section id="faq" className="faq-section bg-slate-900 p-8">
+    <h2>Frequently Asked Questions</h2>
+    <div className="faq-item">
+      <h3>What is PRPilot?</h3>
+      <p>PRPilot automates your pull request processes.</p>
+    </div>
+    <div className="faq-item">
+      <h3>How does AI enhance code reviews?</h3>
+      <p>AI provides insights and suggestions based on code changes.</p>
+    </div>
+    <div className="faq-item">
+      <h3>Is it secure?</h3>
+      <p>Yes, PRPilot ensures your code is kept secure.</p>
+    </div>
+    <div className="faq-item">
+      <h3>Can I integrate with other tools?</h3>
+      <p>Yes, PRPilot integrates with various CI/CD tools and platforms.</p>
+    </div>
+  </section>
+  <footer className="bg-slate-800 p-6">
+    <p>&copy; 2023 PRPilot. All rights reserved.</p>
+    <p className="live-status">All Systems Operational 🟢</p>
+  </footer>
 </div>
 ); }
