@@ -1,0 +1,88 @@
+body {
+  --color-bg: #ffffff;
+  --color-primary: #4a90e2;
+  --color-surface: rgba(255, 255, 255, 0.8);
+  --color-border: rgba(0, 0, 0, 0.1);
+  background-color: var(--color-bg);
+  scroll-behavior: smooth;
+  transition: background-color 0.3s ease;
+}
+
+/* Header Styling */
+header {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-surface);
+  backdrop-filter: blur(16px);
+  padding: 10px 20px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links li {
+  display: inline;
+  margin: 0 10px;
+}
+
+/* Hero Section */
+.hero {
+  background: radial-gradient(
+    circle at 50% 50%,
+    rgba(74, 144, 226, 0.8),
+    rgba(74, 144, 226, 0.5)
+  );
+  padding: 100px 20px;
+  transition: opacity 0.5s ease;
+}
+
+/* Features Section */
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.feature-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  backdrop-filter: blur(16px);
+  border-radius: 8px;
+  padding: 20px;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(74, 144, 226, 0.6);
+}
+
+/* CTA Banner */
+.cta-banner {
+  padding: 50px 20px;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Footer */
+footer {
+  background-color: #f8f8f8;
+  padding: 20px;
+}
+
+/* Animation Keyframes */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.hero {
+  animation: gradientShift 15s ease infinite;
+}
