@@ -6,7 +6,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "public")));
+const fs = require("fs");
+const staticDir = fs.existsSync(path.join(__dirname, "dist")) ? "dist" : "public";
+app.use(express.static(path.join(__dirname, staticDir)));
 
 // Use the health router for /api/v1/health endpoint
 app.use("/api/v1/health", healthRouter);
