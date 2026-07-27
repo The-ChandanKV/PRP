@@ -1,24 +1,70 @@
-import React from "react"; import { PageHeader } from
-"../src/components/Feature/PageHeader"; /** Generated scaffold for: Implement
-Jira issue SCRUM-27 for The-ChandanKV/PRP. Summary: [UI/UX] Create an Immersive
-Dynamic Landing Page for PRPil * Template: landing_page * Planned components: 5
-*/ export default function FeaturePage() { return (
-<div className="min-h-screen bg-background text-foreground">
-  <header className="border-b border-border px-6 py-4">
-    <h1 className="text-2xl font-semibold tracking-tight">Feature</h1>
-    <p className="mt-1 text-sm text-muted-foreground">
-      full-bleed-hero-then-sections
-    </p>
-  </header>
-  <main className="mx-auto max-w-5xl space-y-6 px-6 py-8">
-    <section
-      className="rounded-lg border border-border bg-card p-6 text-card-foreground"
-    >
-      <p className="text-sm text-muted-foreground">
-        Loading, empty, and error states should be handled by data hooks.
-      </p>
-    </section>
-    <PageHeader title="PageHeader" />
-  </main>
-</div>
-); }
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRPilot Landing Page</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="dark-mode">
+    <header class="page-header">
+      <nav>
+        <div class="logo">PRPilot</div>
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#cta">Get Started</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+        <button type="button" class="cta-button">Get Started Free</button>
+      </nav>
+    </header>
+    <main>
+      <section class="hero-section">
+        <h1>AI-Powered GitHub PR Automation</h1>
+        <p>Streamline your pull request management with PRPilot.</p>
+        <button type="button" class="cta-button">Start for Free</button>
+      </section>
+      <section class="feature-grid" id="features">
+        <div class="feature-card">
+          <h2>Feature 1</h2>
+          <p>Details about feature 1.</p>
+        </div>
+        <div class="feature-card">
+          <h2>Feature 2</h2>
+          <p>Details about feature 2.</p>
+        </div>
+        <div class="feature-card">
+          <h2>Feature 3</h2>
+          <p>Details about feature 3.</p>
+        </div>
+      </section>
+      <section class="cta-banner" id="cta">
+        <h2>Join Us Today</h2>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" placeholder="Your email here" />
+        <button type="button" class="cta-button">Sign Up</button>
+      </section>
+    </main>
+    <footer id="footer">
+      <div class="footer-links">
+        <div>
+          <h3>Company</h3>
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <a href="#">Help Center</a>
+          <a href="#">Contact</a>
+        </div>
+        <div>
+          <h3>Social</h3>
+          <a href="#">Twitter</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+      <p>&copy; 2023 PRPilot. All rights reserved.</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
