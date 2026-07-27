@@ -1,24 +1,70 @@
-import React from "react"; import { PageHeader } from
-"../src/components/Feature/PageHeader"; /** Generated scaffold for: Implement
-Jira issue SCRUM-27 for The-ChandanKV/PRP. Summary: [UI/UX] Create an Immersive
-Dynamic Landing Page for PRPil * Template: landing_page * Planned components: 5
-*/ export default function FeaturePage() { return (
-<div className="min-h-screen bg-background text-foreground">
-  <header className="border-b border-border px-6 py-4">
-    <h1 className="text-2xl font-semibold tracking-tight">Feature</h1>
-    <p className="mt-1 text-sm text-muted-foreground">
-      full-bleed-hero-then-sections
-    </p>
-  </header>
-  <main className="mx-auto max-w-5xl space-y-6 px-6 py-8">
-    <section
-      className="rounded-lg border border-border bg-card p-6 text-card-foreground"
-    >
-      <p className="text-sm text-muted-foreground">
-        Loading, empty, and error states should be handled by data hooks.
-      </p>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRPilot - AI-Powered GitHub PR Automation</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header id="pageHeader">
+      <nav>
+        <div class="logo">PRPilot</div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#cta">Get Started</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+        <button type="button" class="cta-button">Sign Up</button>
+      </nav>
+    </header>
+    <section id="heroSection" class="hero">
+      <h1>Elevate Your PR Workflow</h1>
+      <p>Streamline your GitHub pull requests with AI efficiency.</p>
+      <button type="button" class="primary-cta">Start for Free</button>
+      <button type="button" class="secondary-cta">Learn More</button>
     </section>
-    <PageHeader title="PageHeader" />
-  </main>
-</div>
-); }
+    <section id="features" class="feature-grid">
+      <div class="feature-card">
+        <h2>Feature One</h2>
+        <p>Description of feature one.</p>
+      </div>
+      <div class="feature-card">
+        <h2>Feature Two</h2>
+        <p>Description of feature two.</p>
+      </div>
+      <div class="feature-card">
+        <h2>Feature Three</h2>
+        <p>Description of feature three.</p>
+      </div>
+    </section>
+    <section id="cta" class="cta-banner">
+      <h2>Join our community today!</h2>
+      <input type="email" id="emailCapture" placeholder="Enter your email" />
+      <button type="button" class="cta-button">Subscribe</button>
+    </section>
+    <footer id="footer">
+      <div class="footer-links">
+        <div class="column">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#privacy">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Social</h3>
+          <ul>
+            <li><a href="#twitter">Twitter</a></li>
+            <li><a href="#linkedin">LinkedIn</a></li>
+          </ul>
+        </div>
+        <div class="column">
+          <h3>Contact</h3>
+          <p>&copy; 2023 PRPilot</p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
