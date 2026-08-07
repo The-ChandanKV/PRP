@@ -9,10 +9,78 @@
 }
 
 @keyframes pulseGlow {
-  0%, 100% { opacity: 0.4; transform: scale(1); }
-  50% { opacity: 0.8; transform: scale(1.05); }
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
 }
 
 .animate-pulse-glow {
   animation: pulseGlow 6s ease-in-out infinite;
+}
+
+/* Stitch design assets (auto-injected) */
+.glass-card {
+  background-color: rgba(30, 41, 59, 0.5);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(51, 65, 85, 0.6);
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+.nav-active {
+  background: rgba(79, 70, 229, 0.1);
+  color: #c3c0ff;
+  border-right: 4px solid #c3c0ff;
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #c3c0ff, #4cd7f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom scrollbar for webkit */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(200%);
+  }
+}
+
+/* Stitch scroll-reveal classes visible without JS observer */
+.reveal {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+.reveal.active {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+.reveal.visible {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+.fade-in-up {
+  opacity: 1 !important;
+  transform: none !important;
 }
