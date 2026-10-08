@@ -26,6 +26,17 @@ app.get("/auth/google/user", (req, res) => {
   res.json({ user: "User information would be retrieved here" });
 });
 
+// Logout endpoint - clears JWT session cookie
+app.post("/api/v1/auth/logout", (req, res) => {
+  res.clearCookie("token", {
+    httpOnly: true,
+    secure: process.env.NODE_ENV === "production",
+    sameSite: "lax",
+    path: "/"
+  });
+  res.status(200).json({ ok: true });
+});
+
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
 });
